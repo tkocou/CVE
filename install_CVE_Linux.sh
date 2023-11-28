@@ -33,13 +33,13 @@ if ping -q -c 1 google.com >/dev/null 2>&1; then
     cd ~
 
     # Check if git directory exists
-    if [[ -d ~/CVE/.git ]] ; then
+    if [ -d ~/CVE/.git ] ; then
         cd ./CVE
         echo Pulling latest changes
         git pull
 
     ## Check if we have an older ASC installation
-    elif  [[ -d ~/CVE ]] ; then
+    elif  [ -d ~/CVE ] ; then
         echo Saving database and removing old installation
         cp ./CVE/cve.db .
         rm -rf ./CVE
