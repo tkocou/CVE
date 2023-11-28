@@ -1,0 +1,32 @@
+0.90 - initial upload
+
+0.91 - bug fixes
+
+0.92 - added ability to save SQL results as a CSV file
+
+0.92.1 - Added CSV save to SQL results display
+
+0.93 - Added session JSON file import, removed W5YI DAT file import, added VEs to database, added a session report
+        via menu. From a previous version of CVE-DB, the older database format is not compatable with the new 
+        database format. The database will need to be re-built by importing the JSON session files again.
+
+0.94 - Added ability to segregate imported JSON files by VEC. A thank you to Nick, N1CCK, for his input to this
+        needed feature. The database will need to be re-built by importing the JSON session files again.
+
+
+0.94.1 - An adjustment to the GUI to accomodate the longer VEC names. No need to rebuild the database if 
+        coming from version 0.94
+
+0.95 - Added a VE report which summarizes the status of a VE, harmonized GUI for MacOS. No need to rebuild
+         the database if coming from version 0.94
+        Also added code to JSON_import.py to ignore JSON files coming from the 'sandbox' version of Exam Tools
+
+0.95.1 - Fixed an import problem where JSON files lacked the 3 signatures for the applicant's 605 form. Fixed 
+        a problem where the team Id was dropped from the JSON file by the request of GLAARG.
+
+0.95.2 - Fixed JSON Import to accomodate earlier JSON files which are missing the type of exam data 
+        (In-Person vs Remote)
+
+0.95.3 - Fixed JSON Import to accomodate Invalidated exams. An adjustment was made to the session table. The database will need to be rebuilt.
+
+0.95.4 - Fixed left panel listing. No database rebuild needed if coming from 0.95.3
