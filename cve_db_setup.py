@@ -24,7 +24,8 @@ def setup():
         pass
     else:
         # else create a new database
-        with open(gv.cve_database,mode="w"):pass
+        with open(gv.cve_database,mode="w"):
+            pass
 
         ## build database ONLY if database did not exist
         
@@ -55,7 +56,7 @@ def setup():
                 date TEXT 
                 );
             """
-        sql_result = db_cursor.execute(sql)
+        sql_result = db_cursor.execute(sql)  # noqa: F841
         
         db_connection.commit()   
             
